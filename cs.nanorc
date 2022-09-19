@@ -1,0 +1,19 @@
+## Syntax highlighting for Csharp.
+## Author : collinsey
+
+syntax cs "\.cs$"
+magic "Csharp "
+comment "//"
+
+
+color italic,green "\<(bool|byte|char|double|float|int|long|new|short|string|this|transient|uint|void)\>"
+color bold,red "\<(break|case|catch|continue|default|do|else|finally|for|foreach|if|return|switch|throw|try|while)\>"
+color cyan "\<(abstract|class|as|enum|final|is|interface|struct|using)\>"
+color bold,white "\<(namespace|private|protected|public|static|throws|volatile|virtual)\>"
+color orange ""[^"]*""
+color bold,orange "\<(true|false|null)\>"
+color italic,yellow "//.*"
+color italic,yellow start="/\*" end="\*/"
+color brightgreen start="/\*\*" end="\*/"
+
+#color ,white "[[:space:]]+$"
